@@ -1,0 +1,53 @@
+@import './variables';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 15px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding: 0 15px;
+
+  // flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.disable-container-gutters {
+  position: relative;
+  left: -15px;
+  width: calc(100% + 30px);
+}
+
+.btn {
+  border: none;
+  background: $black;
+  color: $white;
+  border-radius: 4px;
+  
+  &:hover {
+    background: #333636;
+  }
+}

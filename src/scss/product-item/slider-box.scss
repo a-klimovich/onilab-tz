@@ -1,0 +1,108 @@
+@import '../variables';
+
+.product-item-content {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 380px;
+  padding-top: 40px;
+  margin-bottom: 40px;
+
+  &__slider {
+    position: relative;
+
+    .dots {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+
+      span {
+        width: 7px;
+        height: 4px;
+
+        border-radius: 10px;
+        margin-right: 6px;
+        background-color: $base-gray-20;
+        cursor: pointer;
+
+        &.active {
+          width: 14px;
+          background-color: $black;
+        }
+      }
+    }
+
+    .slide {
+      margin-bottom: 25px;
+    }
+
+    .slide img {
+      max-width: 220px;
+    }
+  }
+
+  &__rare-status,
+  &__proposal {
+    position: absolute;
+    top: 0;
+    border-radius: 2px;
+    padding: 4px;
+  }
+
+  &__rare-status {
+    left: 0;
+    font-size: 10px;
+    background-color: $black;
+    color: $white;
+  }
+
+  &__proposal {
+    top: -1px;
+    right: 0;
+    font-size: 12px;
+    background-color: $light-gray;
+    color: $black;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      height: 100%;
+      background-color: $light-gray;
+      right: -15px;
+      width: 16px;
+    }
+  }
+
+  &__follow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 36px;
+    height: 36px;
+    border-radius: 25px;
+    cursor: pointer;
+    
+    box-shadow: $mobile-shadow;
+
+    img, svg {
+      width: 15px;
+      stroke: $base-gray-50;
+
+      &:hover, 
+      &.active {
+        fill: $primary;
+      }
+    }
+  }
+}

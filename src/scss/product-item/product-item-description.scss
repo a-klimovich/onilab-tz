@@ -1,0 +1,50 @@
+@import '../variables';
+
+.product-item-description {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  &__brand {
+    text-transform: uppercase;
+    opacity: .5;
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+
+  &__product-rate {
+    display: flex;
+    font-size: 12px;
+    color: $base-gray-50;
+    
+    margin-bottom: 12px;
+
+    .rate-stars-bar {
+      margin-right: 5px;
+
+      i {
+        margin-right: 3px;
+      }
+    }
+  }
+
+  &__stock {
+    font-size: 12px;
+    margin-bottom: 12px;
+
+    .stockStatus {
+      color: $green;
+    }
+  }
+
+  &__price {
+    font-size: 18;
+    font-weight: 700;
+  }
+
+}

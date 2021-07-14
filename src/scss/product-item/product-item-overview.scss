@@ -1,0 +1,39 @@
+@import '../variables';
+
+.product-item-overview {
+  .overview-skin-type-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .about-product-visualization {
+    margin-right: 10px;
+
+    &__image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 52px;
+      height: 52px;
+      border-radius: 25px;
+      overflow: hidden;
+
+      background-color: #F2F4F8;
+      font-size: 34px;
+      
+      margin-bottom: 8px;
+    }
+
+    &__title {
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    &__subtitle {
+      font-size: 11px;
+    }
+  }
+}

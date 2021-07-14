@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('./utils/head.html')
+<body>
+  <div class="wrapper">
+    @@include('./promobar.html')
+    
+    <div class="header-wrapper">
+      <div class="container">
+        @@include('./header.html')
+      </div>
+    </div>
+    
+
+    <div class="main">
+      <div class="container">
+        <div class="product-item">
+          <div class="row">
+            <div class="col">
+              @@include('./product-item/product-item-content.html')
+            </div>
+        
+            <div class="col">
+              <div class="product-item-description">
+                <p class="product-item-description__brand">guerlain</p>
+                <p class="h4 product-item-description__title">Kiss Kiss Shaping Cream Lip Colour 3.5g</p>
+
+                <div class="product-item-description__product-rate">
+                  <div class="rate-stars-bar">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+
+                  <p>(<span class="reviewsCounter">30</span>) Read Reviews</p>
+                </div>
+
+                <div class="product-item-description__stock">
+                  <p>Stock availability: <span class="stockStatus">In stock</span></p>
+                </div>
+
+                <div class="product-item-description__price">
+                  38.00 €
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="disable-container-gutters">
+                <div class="product-item-palette">
+                  <div class="product-item-palette__info">
+                    <p>Color: <span id="itemColourName" class="colour-name">340 Miss Kiss</span></p>
+  
+                    <a href="#">View all colors</a>
+                  </div>
+  
+                  <div class="product-item-palette__colour-bar">
+                    @@include('./product-item/good-color.html', {
+                      'colour': '#883039',
+                      'name': 'colorName'
+                    })
+  
+                    @@include('./product-item/good-color.html', {
+                      'colour': '#7C3946',
+                      'name': 'colorName'
+                    })
+  
+                    @@include('./product-item/good-color.html', {
+                      'colour': '#C05652',
+                      'name': 'colorName'
+                    })
+  
+                    @@include('./product-item/good-color.html', {
+                      'colour': '#982630',
+                      'name': 'colorName'
+                    })
+  
+                    @@include('./product-item/good-color.html', {
+                      'colour': '#601830',
+                      'name': 'colorName'
+                    })
+  
+                    @@include('./product-item/good-color.html', {
+                      'colour': '#993167',
+                      'name': 'colorName'
+                    })
+  
+                    @@include('./product-item/good-color.html', {
+                      'colour': '#5D1C38',
+                      'name': 'colorName'
+                    })
+  
+                    @@include('./product-item/good-color.html', {
+                      'colour': '#982630',
+                      'name': 'colorName'
+                    })
+                  </div>
+  
+                  <div class="product-item-palette__about-points">
+                    <div class="image"><img src="./assets/logo.svg" alt=""></div>
+                    <div class="title">Earn <span id="pointsBlissBit" class="bliss-points">76</span> Bliss Bits points:</div>
+                    <div class="subtitle">What’s this?</div>
+                  </div>
+                </div>
+              </div>
+              
+
+              <hr>
+
+              <div class="product-item-overview">
+                <div class="overview-skin-type-wrap">
+                  @@include('./product-item/about-product-visualization.html', {
+                    'icon-name': 'icon-skin-type',
+                    'title': 'Skin Type',
+                    'subtitle': 'All Skin Type',
+                  })
+                </div>
+
+                <p class="product-item-overview__title"><b>What is it</b></p>
+
+                <br>
+
+                <p class="product-item-overview__text">KissKiss surprises us once again by slipping into a precious and graceful little black dress.
+                  Its understated case shows off infinitely elegant curves. A tube transformed into a work of art, a sculptural jewel developed
+                   like three sleek cubes. Simply chic!</p>
+
+                <br>
+                
+                <p class="product-item-overview__title"><b>What is does</b></p>
+                
+                <br>
+                
+                <p class="product-item-overview__text">In perfect harmony with feminine curves, lips 
+                  immediately regain their fullness and softness thanks to a formula enriched with plumping and 
+                  smoothing hyaluronic acid spheres. In parallel, Commiphora oil helps to hydrate the lip surface.</p>
+
+                <button>Read more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      some contant
+    </footer>
+  </div>
+</body>
+  @@include('./utils/includies.html')
+</html>
