@@ -51,3 +51,25 @@
     background: #333636;
   }
 }
+
+.giveMeEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.5;
+  max-height: calc(10 * 1.5);
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.border-bottom {
+  border-bottom: 0.7px solid $base-gray-20;
+}

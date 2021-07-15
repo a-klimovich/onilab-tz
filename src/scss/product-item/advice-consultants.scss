@@ -1,0 +1,57 @@
+@import '../variables';
+
+.advice-consultants {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8px 20px 20px;
+  border-radius: 4px;
+  background-color: rgba(242, 206, 223, 0.6);
+  margin-bottom: 20px;
+
+  &__text {
+    color: $primary;
+    margin-right: 10px;
+    
+    .title {
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .text {
+      font-size: 12px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 31px;
+    height: 31px;
+    border-radius: 4px;
+    background-color: $white;
+    border: none;
+    color: $primary;
+    cursor: pointer;
+    position: relative;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 8px;
+      height: 2px;
+      background-color: $primary;
+      border-radius: 10px;
+    }
+
+    &::before {
+      top: 56%;
+      transform: rotate(-45deg);
+    }
+    &::after {
+      bottom: 54%;
+      transform: rotate(45deg);
+    }
+  }
+}

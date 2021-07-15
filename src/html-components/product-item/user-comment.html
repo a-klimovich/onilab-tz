@@ -1,0 +1,35 @@
+<div class="user-comment">
+  <div class="user-comment__title-and-mark">
+    <div class="title">@@userTitleComment</div>
+
+    <div class="rate-stars-bar">
+      @@include('../assets/icon/star.svg', {
+        'class': 'fill-primary',
+      })
+      @@include('../assets/icon/star.svg', {
+        'class': 'fill-primary',
+      })
+      @@include('../assets/icon/star.svg', {
+        'class': 'fill-primary',
+      })
+      @@include('../assets/icon/star.svg', {
+        'class': 'fill-primary',
+      })
+      @@include('../assets/icon/star.svg', {
+        'class': 'fill-primary',
+      })
+    </div>
+  </div>
+
+  <div class="user-comment__exact-product-info">
+    <div class="color" style="background-color: @@color"></div>
+    <p class="color-name">Color: <span>@@colorName</span></p>
+  </div>
+
+  <p class="user-comment__comment">@@userComment</p>
+
+  <div class="user-comment__username-and-date">
+    <span class="name">@@userName</span>
+    <span class="date">@@postDate</span>
+  </div>
+</div>

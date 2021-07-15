@@ -3,6 +3,7 @@
   @@include('./utils/head.html')
 <body>
   <div class="wrapper">
+    <a name="top" href="#"></a>
     @@include('./promobar.html')
     
     <div class="header-wrapper">
@@ -21,17 +22,27 @@
             </div>
         
             <div class="col">
-              <div class="product-item-description">
+              <div class="product-item-description border-bottom mb-20 pb-20">
                 <p class="product-item-description__brand">guerlain</p>
                 <p class="h4 product-item-description__title">Kiss Kiss Shaping Cream Lip Colour 3.5g</p>
 
                 <div class="product-item-description__product-rate">
                   <div class="rate-stars-bar">
-                    <i class="icon-star"></i>
-                    <i class="icon-star"></i>
-                    <i class="icon-star"></i>
-                    <i class="icon-star"></i>
-                    <i class="icon-star"></i>
+                    @@include('../assets/icon/star.svg', {
+                      'class': 'fill-primary',
+                    })
+                    @@include('../assets/icon/star.svg', {
+                      'class': 'fill-primary',
+                    })
+                    @@include('../assets/icon/star.svg', {
+                      'class': 'fill-primary',
+                    })
+                    @@include('../assets/icon/star.svg', {
+                      'class': 'fill-primary',
+                    })
+                    @@include('../assets/icon/star.svg', {
+                      'class': 'fill-light-gray',
+                    })
                   </div>
 
                   <p>(<span class="reviewsCounter">30</span>) Read Reviews</p>
@@ -46,10 +57,8 @@
                 </div>
               </div>
 
-              <hr>
-
               <div class="disable-container-gutters">
-                <div class="product-item-palette">
+                <div class="product-item-palette border-bottom mb-20 pb-20">
                   <div class="product-item-palette__info">
                     <p>Color: <span id="itemColourName" class="colour-name">340 Miss Kiss</span></p>
   
@@ -105,47 +114,208 @@
                   </div>
                 </div>
               </div>
+
+              @@include('./product-item/product-item-overview.html')
+              @@include('./product-item/product-item-ingredients.html')
+              @@include('./product-item/product-item-about-brand.html')
+              @@include('./product-item/advice-consultants.html')
               
+              <div class="product-item-reviews border-bottom mb-20 pb-20">
+                <div class="product-item-reviews__title">Reviews</div>
 
-              <hr>
+                <div class="product-item-reviews__add-review">
+                  <div class="user-rating-item">
+                    <div class="rate-stars-bar">
+                      @@include('../assets/icon/star.svg', {
+                        'class': 'fill-primary',
+                      })
+                      @@include('../assets/icon/star.svg', {
+                        'class': 'fill-primary',
+                      })
+                      @@include('../assets/icon/star.svg', {
+                        'class': 'fill-primary',
+                      })
+                      @@include('../assets/icon/star.svg', {
+                        'class': 'fill-primary',
+                      })
+                      @@include('../assets/icon/star.svg', {
+                        'class': 'fill-light-gray',
+                      })
+                    </div>
 
-              <div class="product-item-overview">
-                <div class="overview-skin-type-wrap">
-                  @@include('./product-item/about-product-visualization.html', {
-                    'icon-name': 'icon-skin-type',
-                    'title': 'Skin Type',
-                    'subtitle': 'All Skin Type',
-                  })
+                    <p>30 Reviews</p>
+                  </div>
+
+                  <button class="add-review__btn">Write a review</button>
                 </div>
 
-                <p class="product-item-overview__title"><b>What is it</b></p>
+                @@include('./product-item/user-comment.html', {
+                  'userTitleComment':'Perfect!!',
+                  'color':'#C05652',
+                  'colorName':'340 Miss Kiss ',
+                  'userComment':'Everything was cool. Product quality top, delivery fast. Thanks Bliss ^^',
+                  'userName':'Mary Collins',
+                  'postDate':'2 days ago',
+                })
+                @@include('./product-item/user-comment.html', {
+                  'userTitleComment':'Love It!',
+                  'color':'#601830',
+                  'colorName':'328 Red Hot',
+                  'userComment':'I love this, it like a lip stick and balm in one, goes on nicely with lovely sheer buildable color.',
+                  'userName':'Mavis Dracula',
+                  'postDate':'5 days ago',
+                })
 
-                <br>
+                <button class="product-item-reviews__btn">View all reviews</button>
+              </div>
 
-                <p class="product-item-overview__text">KissKiss surprises us once again by slipping into a precious and graceful little black dress.
-                  Its understated case shows off infinitely elegant curves. A tube transformed into a work of art, a sculptural jewel developed
-                   like three sleek cubes. Simply chic!</p>
+              @@include('./product-item/product-item-delivery.html')
+            </div>
+          </div>
+        </div>
 
-                <br>
-                
-                <p class="product-item-overview__title"><b>What is does</b></p>
-                
-                <br>
-                
-                <p class="product-item-overview__text">In perfect harmony with feminine curves, lips 
-                  immediately regain their fullness and softness thanks to a formula enriched with plumping and 
-                  smoothing hyaluronic acid spheres. In parallel, Commiphora oil helps to hydrate the lip surface.</p>
+        <div class="disable-container-gutters">
+          <div class="similar-product-slider">
+            <p class="similar-product-slider__title mb-20">Similar Products by Guerlain</p>
 
-                <button>Read more</button>
+            <div class="similar-product-slider__slider">
+              @@include('./product-item/similar-product-item.html', {
+                'image': '../img/lingerie-de-peau-natural-perfection.png',
+                'brand': 'guerlain',
+                'productName': 'Lingerie De Peau Natural Perfection...',
+                'price': '55.00 €',
+              })
+
+              @@include('./product-item/similar-product-item.html', {
+                'image': '../img/intense-liquid-matte-creamy-velvet-lip.png',
+                'brand': 'guerlain',
+                'productName': 'Intense Liquid Matte Creamy Velvet Lip',
+                'price': '34.00 €',
+              })
+
+              @@include('./product-item/similar-product-item.html', {
+                'image': '../img/lingerie-de-peau-natural-perfection.png',
+                'brand': 'guerlain',
+                'productName': 'Lingerie De Peau Natural Perfection...',
+                'price': '55.00 €',
+              })
+
+              @@include('./product-item/similar-product-item.html', {
+                'image': '../img/intense-liquid-matte-creamy-velvet-lip.png',
+                'brand': 'guerlain',
+                'productName': 'Intense Liquid Matte Creamy Velvet Lip',
+                'price': '34.00 €',
+              })
+
+              <div class="dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
 
-    <footer>
-      some contant
+    <footer class="footer">
+      <a href="#top" class="footer__anchor-to-the-top">
+        <span>Back to top</span> 
+        <span class="arrow">@@include('../assets/icon/chevron.svg')</span>
+      </a>
+      
+      <div class="container">
+        <div class="footer__quick-registration">
+          <p>Get 10%off your first order</p>
+        
+          <form action="#">
+            <input placeholder="Enter your email" type="email">
+            <button class="btn">join</button>
+          </form>
+        </div>
+  
+        <div class="nav">
+          <details class="nav-section nav__customer-service">
+            <summary class="nav__section-title"><span>customer service</span> <span>@@include('../assets/icon/chevron.svg')</span></summary>
+    
+            <ul class="collapce">
+              <li><a href="#">Shipping & Delivery</a></li>
+              <li><a href="#">Return & Exchanges</a></li>
+              <li><a href="#">Skincare & Advance</a></li>
+              <li><a href="#">FAQ’s</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </details>
+    
+          <details class="nav-section nav__about-us">
+            <summary class="nav__section-title"><span>ABOUT US</span> <span>@@include('../assets/icon/chevron.svg')</span></summary>
+    
+            <ul class="collapce">
+              <li><a href="#">Our team</a></li>
+              <li><a href="#">loyalty programm</a></li>
+              <li><a href="#">Local Stores</a></li>
+              <li><a href="#">FAQ’s</a></li>
+              <li><a href="#">The Beauty Blog</a></li>
+            </ul>
+          </details>
+    
+          <div class="nav-section nav__contact-us">
+            <div class="nav__section-title"><span>Contact us</span></div>
+    
+            <ul>
+              <li>Mon-Sat 9am - 6pm </li>
+              <li><a href="tel: +(056)772-10-33"><span>@@include('../assets/icon/phone.svg')</span> (056) 772-10-33</a></li>
+              <li><a href="mailto: def@dev.com"><span>@@include('../assets/icon/mail.svg')<span>Email</a></li>
+            </ul>
+          </div>
+    
+          <div class="nav-section nav__social">
+            <div class="nav__section-title"><span>Find us on</span></div>
+
+            <div class="social-wrap">
+              <a href="#">@@include('../assets/icon/facebook-color.svg')</a>
+              <a href="#"><img src="../assets/icon/instagram.png" alt=""></a>
+              <a href="#">@@include('../assets/icon/twitter.svg')</a>
+            </div>
+          </div>
+    
+          <div class="nav-section nav__pay-security">
+            <div class="nav__section-title"><span>Pay security with</span></div>
+
+            <div class="pay-security-wrap">
+              <div class="pay-item">
+                <a href="#">@@include('../assets/icon/apple-pay.svg')</a>
+              </div>
+
+              <div class="pay-item">
+                <a href="#">@@include('../assets/icon/visa.svg')</a>
+              </div>
+              
+              <div class="pay-item">
+                <a href="#">@@include('../assets/icon/mastercard.svg')</a>
+              </div>
+              
+              <div class="pay-item">
+                <a href="#">@@include('../assets/icon/paypal.svg')</a>
+              </div>
+              
+              <div class="pay-item">
+                <a href="#">@@include('../assets/icon/amazon-pay.svg')</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer__privacy-policy">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+  
+        <div class="footer__copirating">© 2020 Bliss. All Right Reserved</div>
+      </div>
     </footer>
   </div>
 </body>

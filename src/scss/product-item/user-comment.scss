@@ -1,0 +1,56 @@
+@import '../variables';
+
+.user-comment {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 0.7px solid $base-gray-20;
+  position: relative;
+  z-index: -1;
+
+  &__title-and-mark {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .title {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .rate-stars-bar svg {
+      width: 10px;
+    }
+  }
+
+  &__exact-product-info {
+    display: flex;
+    margin-bottom: 20px;
+
+    .color {
+      width: 20px;
+      height: 20px;
+      border-radius: 25px;
+      background: #000;
+      margin-right: 8px;
+    }
+
+    .color-name {
+      color: $base-gray-50;
+
+      span {
+        color: $black;
+      }
+    }
+  }
+
+  &__comment {
+    margin-bottom: 16px;
+  }
+
+  &__username-and-date {
+    display: flex;
+    justify-content: space-between;
+    color: $base-gray-50;
+    font-size: 12px;
+  }
+}
