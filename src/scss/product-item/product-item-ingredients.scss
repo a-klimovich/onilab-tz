@@ -1,0 +1,14 @@
+@import '../variables';
+
+.product-item-ingredients {
+  &__title {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      svg {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}
