@@ -10,25 +10,33 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4px;
-  }
 
-  .fastway-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .fastway-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      min-width: 100px;
+      max-width: 152px;
+      width: 100%;
+      height: 72px;
+      margin-right: 28px;
+  
+      background: $white;
+      box-shadow: 0px 3px 10px rgba(34, 34, 34, 0.08);
+      border-radius: 4px;
+  
+      img {
+        width: 68px;
+      }
+    }
 
-    min-width: 100px;
-    max-width: 152px;
-    width: 100%;
-    height: 72px;
-    margin-right: 28px;
-
-    background: $white;
-    box-shadow: 0px 3px 10px rgba(34, 34, 34, 0.08);
-    border-radius: 4px;
-
-    img {
-      width: 68px;
+    @media (min-width: 768px) {
+      display: block;
+      
+      .fastway-logo {
+        float: left;
+      }
     }
   }
 
@@ -42,6 +50,11 @@
 
     li {
       margin-bottom: 12px;
+    }
+
+    @media (min-width: 768px) {
+      list-style: disc;
+      padding-left: 20px;
     }
   }
 

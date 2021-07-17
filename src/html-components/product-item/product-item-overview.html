@@ -2,11 +2,15 @@
   <p class="product-item-overview__title">Overview</p>
 
   <div class="overview-skin-type-wrap">
-    @@include('./product-item/about-product-visualization.html', {
-      'icon-name': 'icon-skin-type',
-      'title': 'Skin Type',
-      'subtitle': 'All Skin Type',
-    })
+    <div class="about-product-visualization">
+      <div class="about-product-visualization__image">
+        @@include('../assets/icon/skin-type.svg')
+      </div>
+    
+      <div class="about-product-visualization__title">Skin Type</div>
+    
+      <div class="about-product-visualization__subtitle">All Skin Type</div>
+    </div>
   </div>
 
   <div class="product-item-overview__content">

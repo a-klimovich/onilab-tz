@@ -32,16 +32,13 @@
         transform: rotate(90deg);
       }
     }
+
     &.next {
       right: 0;
       
       svg {
         transform: rotate(-90deg);
       }
-    }
-
-    @media (min-width: 768px) {
-      display: block;
     }
   }
 
@@ -63,8 +60,27 @@
     }
 
     span.active {
-      background-color: $base-gray-50;
+      background-color: $base-gray-20;
       border-radius: 4px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding-bottom: 71px;
+
+    &__title {
+      font-size: 28px;
+      margin-bottom: 48px;
+    }
+
+    &__arrow {
+      display: block;
+    }
+
+    .dots {
+      width: calc(70% - 30px);
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }

@@ -12,4 +12,18 @@
       }
     }
   }
+
+  &__brand-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+    margin-bottom: 30px;
+    
+    padding: 15px 20px;
+    border-radius: 4px;
+
+    background-color: $light-gray-50;
+  }
 }
