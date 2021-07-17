@@ -3,20 +3,24 @@
     <span>Back to top</span> 
     <span class="arrow">@@include('../assets/icon/chevron.svg')</span>
   </a>
+
+  <div class="footer__quick-registration">
+    <p class="footer__quick-registration_title">Get 10%off your first order</p>
+  
+    <form action="#">
+      <input placeholder="Enter your email" type="email">
+      <button class="btn">join</button>
+    </form>
+  </div>
   
   <div class="container">
-    <div class="footer__quick-registration">
-      <p>Get 10%off your first order</p>
-    
-      <form action="#">
-        <input placeholder="Enter your email" type="email">
-        <button class="btn">join</button>
-      </form>
-    </div>
-
     <div class="nav">
-      <details class="nav-section nav__customer-service">
-        <summary class="nav__section-title"><span>customer service</span> <span>@@include('../assets/icon/chevron.svg')</span></summary>
+      <div class="nav-section nav__logo">
+        <img src="../assets/min-logo-1.svg" alt="">
+      </div>
+
+      <div class="nav-section nav__customer-service">
+        <div class="nav__section-title"><span>customer service</span> <span>@@include('../assets/icon/chevron.svg')</span></div>
 
         <ul class="collapce">
           <li><a href="#">Shipping & Delivery</a></li>
@@ -25,10 +29,10 @@
           <li><a href="#">FAQ’s</a></li>
           <li><a href="#">Privacy Policy</a></li>
         </ul>
-      </details>
+      </div>
 
-      <details class="nav-section nav__about-us">
-        <summary class="nav__section-title"><span>ABOUT US</span> <span>@@include('../assets/icon/chevron.svg')</span></summary>
+      <div class="nav-section nav__about-us">
+        <div class="nav__section-title"><span>ABOUT US</span> <span>@@include('../assets/icon/chevron.svg')</span></div>
 
         <ul class="collapce">
           <li><a href="#">Our team</a></li>
@@ -37,7 +41,7 @@
           <li><a href="#">FAQ’s</a></li>
           <li><a href="#">The Beauty Blog</a></li>
         </ul>
-      </details>
+      </div>
 
       <div class="nav-section nav__contact-us">
         <div class="nav__section-title"><span>Contact us</span></div>
@@ -53,9 +57,20 @@
         <div class="nav__section-title"><span>Find us on</span></div>
 
         <div class="social-wrap">
-          <a href="#">@@include('../assets/icon/facebook-color.svg')</a>
-          <a href="#"><img src="./assets/icon/instagram.png" alt=""></a>
-          <a href="#">@@include('../assets/icon/twitter.svg')</a>
+          <div class="social-item">
+            <a class="image" href="#">@@include('../assets/icon/facebook-color.svg')</a>
+            <a class="text" href="#">Facebook</a>
+          </div>
+          
+          <div class="social-item">
+            <a class="image" href="#"><img src="./assets/icon/instagram.png" alt=""></a>
+            <a class="text" href="#">Instagram</a>
+          </div>
+          
+          <div class="social-item">
+            <a class="image" href="#">@@include('../assets/icon/twitter.svg')</a>
+            <a class="text" href="#">Twitter</a>
+          </div>
         </div>
       </div>
 
@@ -91,7 +106,7 @@
       <a href="#">Terms of Use</a>
       <a href="#">Privacy Policy</a>
     </div>
-
-    <div class="footer__copirating">© 2020 Bliss. All Right Reserved</div>
   </div>
+
+  <div class="footer__copirating">© 2020 Bliss. All Right Reserved</div>
 </footer>
