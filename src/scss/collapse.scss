@@ -1,0 +1,13 @@
+@import './variables';
+
+.collapse {
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+
+  &.open {
+    height: auto;
+    overflow: auto;
+    z-index: 0;
+  }
+}

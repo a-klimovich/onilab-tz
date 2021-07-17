@@ -3,10 +3,30 @@
 .photo-product {
   position: relative;
 
+  .wrapper-slider {
+    position: relative;
+
+
+    .prompt-to-contol-slider {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      color: $base-gray-50;
+      font-size: 10px;
+
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+  }
+
   &__slider {
     display: flex;
 
     .mini-photos {
+      display: none;
       margin-right: 24px;
 
       &__image {
@@ -22,6 +42,10 @@
       &__image.active {
         border: 1px solid $primary;
       }
+
+      @media (min-width: 768px) {
+        display: block;
+      }
     }
 
     .slider-main-photo {
@@ -31,8 +55,8 @@
       align-items: center;
 
       width: 100%;
-      max-width: 510px;
-      height: 610px;
+      max-width: 320px;
+      height: 414px;
 
       .custom-slide {
         display: flex;
@@ -46,6 +70,11 @@
           width: 330px;
           max-width: 100%;
         }
+      }
+
+      @media (min-width: 768px) {
+        max-width: 510px;
+        height: 610px;
       }
     }
   }
@@ -95,50 +124,9 @@
         fill: $primary;
       }
     }
+
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 }
-// .product-item-photo-product {
-//   position: relative;
-
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-  
-//   height: 380px;
-//   padding-top: 40px;
-//   margin-bottom: 40px;
-
-//   &__slider {
-
-//     .dots {
-//       position: absolute;
-//       left: 50%;
-//       transform: translateX(-50%);
-//       display: flex;
-
-//       span {
-//         width: 7px;
-//         height: 4px;
-
-//         border-radius: 10px;
-//         margin-right: 6px;
-//         background-color: $base-gray-20;
-//         cursor: pointer;
-
-//         &.active {
-//           width: 14px;
-//           background-color: $black;
-//         }
-//       }
-
-//       .slide {
-//         margin-bottom: 25px;
-//         max-width: 330px;
-//         max-height: 429;
-//       }
-//     }
-//   }
-//   }
-
-  
-// }

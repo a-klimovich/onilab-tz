@@ -68,7 +68,7 @@
         border-radius: 4px;
 
         &::placeholder {
-          color: $light-gray;
+          color: $base-gray-50;
         }
       }
 
@@ -145,6 +145,12 @@
       align-items: center;
       text-transform: uppercase;
       font-weight: 700;
+
+      .menu-list-arrow {
+        @media (min-width: 540px) {
+          display: none;
+        }
+      }
     }
 
     &__contact-us {
