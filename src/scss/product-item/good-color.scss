@@ -14,7 +14,7 @@
 
     &:hover {
       padding: 3px;
-      border: 1.7px solid $base-gray-50;
+      border: 1px solid $base-gray-50;
       border-top: transparent;
     }
   }
@@ -36,7 +36,7 @@
     border-radius: 25px;
 
     & div:hover {
-      border: 1px solid $base-gray-50;
+      border-top: 1px solid $base-gray-50;
     }
 
     &::after {
