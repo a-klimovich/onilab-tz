@@ -39,4 +39,24 @@
     font-weight: 700;
   }
 
+  @media (min-width: 768px) {
+    &__brand {
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+
+    &__title {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    &__product-rate {
+      margin-bottom: 16px;
+    }
+
+    &__stock {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
 }

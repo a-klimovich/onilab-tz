@@ -1,7 +1,9 @@
 @import '../variables';
 
 .similar-product-slider {
+  position: relative;
   margin-bottom: 55px;
+  padding: 0 25px;
 
   &__title {
     padding: 0 15px;
@@ -13,28 +15,56 @@
     display: flex;
     justify-content: center;
     overflow-x: auto;
+  }
 
-    .dots {
-      position: absolute;
-      bottom: 0;
-      left: 15px;
-      width: calc(100% - 30px);
+  &__arrow {
+    position: absolute;
+    display: none;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 25px;
+
+    &.prev {
+      left: 0;
+      
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+    &.next {
+      right: 0;
+      
+      svg {
+        transform: rotate(-90deg);
+      }
+    }
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  .dots {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    width: calc(100% - 30px);
+    height: 4px;
+    background-color: $base-gray-20;
+    display: flex;
+    border-radius: 4px;
+
+    span {
+      display: block;
       height: 4px;
-      background-color: $base-gray-20;
-      display: flex;
+      width: calc(100% / 3);
+      cursor: pointer;
+    }
+
+    span.active {
+      background-color: $base-gray-50;
       border-radius: 4px;
-
-      span {
-        display: block;
-        height: 4px;
-        width: calc(100% / 3);
-        cursor: pointer;
-      }
-
-      span.active {
-        background-color: $base-gray-50;
-        border-radius: 4px;
-      }
     }
   }
 }

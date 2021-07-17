@@ -1,0 +1,41 @@
+<div class="product-item-palette border-bottom mb-20 pb-20">
+  <div class="product-item-palette__info">
+    <p>Color: <span id="itemColourName" class="colour-name">340 Miss Kiss</span></p>
+
+    <a href="#">View all colors</a>
+  </div>
+
+  <div class="product-item-palette__colour-bar">
+    @@loop('./product-item/good-color.html', [
+      {'colour': '#883039', 'name': 'colorName'},
+      {'colour': '#7C3946','name': 'colorName'},
+      {'colour': '#C05652','name': 'colorName','absent': 'absent'},
+      {'colour': '#982630','name': 'colorName'},
+      {'colour': '#601830','name': 'colorName'},
+      {'colour': '#993167','name': 'colorName'},
+      {'colour': '#5D1C38','name': 'colorName'},
+      {'colour': '#982630','name': 'colorName'},
+      {'colour': '#883039', 'name': 'colorName'},
+      {'colour': '#7C3946','name': 'colorName'},
+      {'colour': '#C05652','name': 'colorName','absent': 'absent'},
+      {'colour': '#C05652','name': 'colorName','absent': 'absent'},
+      {'colour': '#C05652','name': 'colorName','absent': 'absent'},
+      {'colour': '#C05652','name': 'colorName','absent': 'absent'},
+      {'colour': '#982630','name': 'colorName'},
+      {'colour': '#883039', 'name': 'colorName'},
+      {'colour': '#7C3946','name': 'colorName'},
+      {'colour': '#C05652','name': 'colorName','absent': 'absent'},
+      {'colour': '#982630','name': 'colorName'},
+      {'colour': '#601830','name': 'colorName'},
+      {'colour': '#993167','name': 'colorName'},
+      {'colour': '#5D1C38','name': 'colorName'},
+      {'colour': '#982630','name': 'colorName'},
+    ])
+  </div>
+
+  <div class="product-item-palette__about-points">
+    <div class="image"><img src="./assets/logo.svg" alt=""></div>
+    <div class="title">Earn <span id="pointsBlissBit" class="bliss-points">76</span> Bliss Bits points:</div>
+    <div class="subtitle">What’s this?</div>
+  </div>
+</div>

@@ -11,6 +11,12 @@
     border-radius: 20px;
     cursor: pointer;
     overflow: hidden;
+
+    &:hover {
+      padding: 3px;
+      border: 1.7px solid $base-gray-50;
+      border-top: transparent;
+    }
   }
 
   span {
@@ -22,6 +28,26 @@
 
   input {
     display: none;
+  }
+
+  &.absent {
+    position: relative;
+    border: 1px solid $base-gray-50;
+    border-radius: 25px;
+
+    & div:hover {
+      border: 1px solid $base-gray-50;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: $base-gray-50;
+      transform: rotate(-45deg);
+      top: 50%;
+    }
   }
 }
 

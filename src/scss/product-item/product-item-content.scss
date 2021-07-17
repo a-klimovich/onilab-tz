@@ -1,0 +1,144 @@
+@import '../variables';
+
+.photo-product {
+  position: relative;
+
+  &__slider {
+    display: flex;
+
+    .mini-photos {
+      margin-right: 24px;
+
+      &__image {
+        width: 100%;
+        max-width: 92px;
+        min-width: 50px;
+        margin-bottom: 12px;
+        border-radius: 4px;
+        overflow: hidden;
+        border: 1px solid transparent;
+      }
+
+      &__image.active {
+        border: 1px solid $primary;
+      }
+    }
+
+    .slider-main-photo {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+      max-width: 510px;
+      height: 610px;
+
+      .custom-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 330px;
+        height: 429px;
+        max-width: 100%;
+
+        img {
+          width: 330px;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .item-tag {
+    position: absolute;
+    top: 0;
+    font-size: 10px;
+  }
+  
+  .item-tag.tag {
+    left: 0;
+  }
+
+  .item-tag.proposal {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__follow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 36px;
+    height: 36px;
+    border-radius: 25px;
+    cursor: pointer;
+    
+    box-shadow: $mobile-shadow;
+
+    img, svg {
+      width: 15px;
+      stroke: $base-gray-50;
+
+      &:hover, 
+      &.active {
+        fill: $primary;
+      }
+    }
+  }
+}
+// .product-item-photo-product {
+//   position: relative;
+
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+  
+//   height: 380px;
+//   padding-top: 40px;
+//   margin-bottom: 40px;
+
+//   &__slider {
+
+//     .dots {
+//       position: absolute;
+//       left: 50%;
+//       transform: translateX(-50%);
+//       display: flex;
+
+//       span {
+//         width: 7px;
+//         height: 4px;
+
+//         border-radius: 10px;
+//         margin-right: 6px;
+//         background-color: $base-gray-20;
+//         cursor: pointer;
+
+//         &.active {
+//           width: 14px;
+//           background-color: $black;
+//         }
+//       }
+
+//       .slide {
+//         margin-bottom: 25px;
+//         max-width: 330px;
+//         max-height: 429;
+//       }
+//     }
+//   }
+//   }
+
+  
+// }

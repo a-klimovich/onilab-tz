@@ -1,0 +1,48 @@
+@import './variables';
+
+.item-tag {
+  border-radius: 4px;
+  padding: 2px 8px;
+  padding-top: 4px;
+  font-size: 12px;
+
+  &.text-white {
+    color: $white;
+  }
+
+  &.text-black {
+    color: $black;
+  }
+
+  &.text-primary {
+    color: $primary;
+  }
+  
+  &.bg-primary {
+    background-color: $primary;
+  }
+
+  &.bg-green {
+    background-color: $green;
+  }
+
+  &.bg-primary {
+    background-color: $primary;
+  }
+
+  &.bg-white {
+    background-color: $white;
+  }
+
+  &.bg-black {
+    background-color: $black;
+  }
+  
+  &.bg-light-gray {
+    background-color: $light-gray;
+  }
+
+  @media (min-width: 768px) {
+    font-weight: 600;
+  }
+}

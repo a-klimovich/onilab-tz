@@ -1,31 +1,55 @@
 <header class="header">
-  <div class="header__hamburger-and-logo">
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+  <div class="header__menu">
+    <div class="header__menu_hamburger-and-logo">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  
+      <div class="logo">
+        <a href="#"><img src="./assets/min-logo-1.svg" alt=""></a>
+      </div>
     </div>
+  
+    <form class="header__menu_search-form" action="#">
+      <input type="text" placeholder="Search">
+      <button type="button">@@include('../assets/icon/search.svg')</button>
+    </form>
 
-    <div class="logo">
-      <a href="#"><img src="./assets/min-logo-1.svg" alt=""></a>
-    </div>
-  </div>
-
-  <div class="header__nav-hot-bar">
-    <div class="header__nav-hot-bar__location">
-      <a href="#"><i class="icon-location"></i></a>
-    </div>
-
-    <div class="header__nav-hot-bar__search">
-      <a href="#"><img src="./assets/icon/search.svg" alt=""></a>
-    </div>
-
-    <div class="header__nav-hot-bar__basket">
-      <i class="icon-basket"></i>
-
-      <div class="basketCounter">
-        <span id="basketProductsCounter">0</span>
+    <div class="header__menu_nav-hot-bar">
+      <button class="nav-hot-bar__item">
+        <span class="mobile">@@include('../assets/icon/location.svg')</span>
+        <span class="desktop">@@include('../assets/icon/heart.svg')</span>
+        <span class="desktop">Wishlist</span>
+      </button>
+  
+      <button class="nav-hot-bar__item">
+        <span class="mobile">@@include('../assets/icon/search.svg')</span>
+        <span class="desktop">@@include('../assets/icon/user.svg')</span>
+        <span class="desktop">Account</span>
+      </button>
+  
+      <div class="nav-hot-bar__basket">
+        <span>@@include('../assets/icon/basket.svg')</span>
+  
+        <div class="basketCounter">
+          <span id="basketProductsCounter">0</span>
+        </div>
       </div>
     </div>
   </div>
+
+  <div class="header__delimiter"></div>
+
+  <ul class="header__nav">
+    <li><a href="#">NEW IN</a></li>
+    <li class="active"><a href="#">Shop</a></li>
+    <li><a href="#">Brands</a></li>
+    <li><a href="#">Offers</a></li>
+    <li><a href="#"><span class="list-marker icon-percent">%</span> SALE</a></li>
+    <li><a href="#">Gifts</a></li>
+    <li><a href="#"><span class="list-marker icon-sheet">@@include('../assets/icon/sheet.svg')</span> Health</a></li>
+    <li><a href="#">Blog</a></li>
+  </ul>
 </header>

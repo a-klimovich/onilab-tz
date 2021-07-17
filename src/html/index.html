@@ -4,15 +4,19 @@
 <body>
   <div class="wrapper">
     <a name="top" href="#"></a>
-    @@include('./promobar.html')
+    @@include('./promobars/promobar.html')
     
     <div class="header-wrapper">
       <div class="container">
         @@include('./header.html')
       </div>
     </div>
-    
+    @@include('./promobars/promobar-secondary.html')
 
+    <div class="container">
+      @@include('./breadcrumbs.html')
+    </div>
+    
     <div class="main">
       <div class="container">
         <div class="product-item">
@@ -58,68 +62,17 @@
               </div>
 
               <div class="disable-container-gutters">
-                <div class="product-item-palette border-bottom mb-20 pb-20">
-                  <div class="product-item-palette__info">
-                    <p>Color: <span id="itemColourName" class="colour-name">340 Miss Kiss</span></p>
-  
-                    <a href="#">View all colors</a>
-                  </div>
-  
-                  <div class="product-item-palette__colour-bar">
-                    @@include('./product-item/good-color.html', {
-                      'colour': '#883039',
-                      'name': 'colorName'
-                    })
-  
-                    @@include('./product-item/good-color.html', {
-                      'colour': '#7C3946',
-                      'name': 'colorName'
-                    })
-  
-                    @@include('./product-item/good-color.html', {
-                      'colour': '#C05652',
-                      'name': 'colorName'
-                    })
-  
-                    @@include('./product-item/good-color.html', {
-                      'colour': '#982630',
-                      'name': 'colorName'
-                    })
-  
-                    @@include('./product-item/good-color.html', {
-                      'colour': '#601830',
-                      'name': 'colorName'
-                    })
-  
-                    @@include('./product-item/good-color.html', {
-                      'colour': '#993167',
-                      'name': 'colorName'
-                    })
-  
-                    @@include('./product-item/good-color.html', {
-                      'colour': '#5D1C38',
-                      'name': 'colorName'
-                    })
-  
-                    @@include('./product-item/good-color.html', {
-                      'colour': '#982630',
-                      'name': 'colorName'
-                    })
-                  </div>
-  
-                  <div class="product-item-palette__about-points">
-                    <div class="image"><img src="./assets/logo.svg" alt=""></div>
-                    <div class="title">Earn <span id="pointsBlissBit" class="bliss-points">76</span> Bliss Bits points:</div>
-                    <div class="subtitle">What’s this?</div>
-                  </div>
-                </div>
+                @@include('./product-item/product-item-palette.html')
               </div>
 
               @@include('./product-item/product-item-overview.html')
+
               @@include('./product-item/product-item-ingredients.html')
+
               @@include('./product-item/product-item-about-brand.html')
+
               @@include('./product-item/advice-consultants.html')
-              
+
               <div class="product-item-reviews border-bottom mb-20 pb-20">
                 <div class="product-item-reviews__title">Reviews</div>
 
@@ -175,48 +128,8 @@
         </div>
 
         <div class="disable-container-gutters">
-          <div class="similar-product-slider">
-            <p class="similar-product-slider__title mb-20">Similar Products by Guerlain</p>
-
-            <div class="similar-product-slider__slider">
-              @@include('./product-item/similar-product-item.html', {
-                'image': './img/lingerie-de-peau-natural-perfection.png',
-                'brand': 'guerlain',
-                'productName': 'Lingerie De Peau Natural Perfection...',
-                'price': '55.00 €',
-              })
-
-              @@include('./product-item/similar-product-item.html', {
-                'image': './img/intense-liquid-matte-creamy-velvet-lip.png',
-                'brand': 'guerlain',
-                'productName': 'Intense Liquid Matte Creamy Velvet Lip',
-                'price': '34.00 €',
-              })
-
-              @@include('./product-item/similar-product-item.html', {
-                'image': './img/lingerie-de-peau-natural-perfection.png',
-                'brand': 'guerlain',
-                'productName': 'Lingerie De Peau Natural Perfection...',
-                'price': '55.00 €',
-              })
-
-              @@include('./product-item/similar-product-item.html', {
-                'image': './img/intense-liquid-matte-creamy-velvet-lip.png',
-                'brand': 'guerlain',
-                'productName': 'Intense Liquid Matte Creamy Velvet Lip',
-                'price': '34.00 €',
-              })
-
-              <div class="dots">
-                <span class="active"></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-          </div>
+          @@include('./product-item/similar-product-slider.html')
         </div>
-
       </div>
     </div>
 

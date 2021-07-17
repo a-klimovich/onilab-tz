@@ -1,0 +1,57 @@
+<div class="similar-product-slider">
+  <p class="similar-product-slider__title mb-20">Similar Products by Guerlain</p>
+
+  <div class="similar-product-slider__slider" id="similarProductItemSlider">
+    @@loop('./product-item/similar-product-item.html', [{
+      'image': './img/lingerie-de-peau-natural-perfection.png',
+      'brand': 'guerlain',
+      'productName': 'Lingerie De Peau Natural Perfection...',
+      'price': '55.00 €',
+    },
+    {
+      'image': './img/intense-liquid-matte-creamy-velvet-lip.png',
+      'brand': 'guerlain',
+      'productName': 'Intense Liquid Matte Creamy Velvet Lip',
+      'price': '34.00 €',
+    },
+    {
+      'image': './img/lingerie-de-peau-natural-perfection.png',
+      'brand': 'guerlain',
+      'productName': 'Lingerie De Peau Natural Perfection...',
+      'price': '55.00 €',
+    },
+    {
+      'image': './img/lingerie-de-peau-natural-perfection.png',
+      'brand': 'guerlain',
+      'productName': 'Lingerie De Peau Natural Perfection...',
+      'price': '55.00 €',
+    },
+    {
+      'image': './img/lingerie-de-peau-natural-perfection.png',
+      'brand': 'guerlain',
+      'productName': 'Lingerie De Peau Natural Perfection...',
+      'price': '55.00 €',
+    },
+    {
+      'image': './img/intense-liquid-matte-creamy-velvet-lip.png',
+      'brand': 'guerlain',
+      'productName': 'Intense Liquid Matte Creamy Velvet Lip',
+      'price': '34.00 €',
+    }])
+  </div>
+
+  <button type="button" class="similar-product-slider__arrow prev">
+    @@include('../assets/icon/chevron.svg')
+  </button>
+
+  <button type="button" class="similar-product-slider__arrow next">
+    @@include('../assets/icon/chevron.svg')
+  </button>
+
+  <div class="dots">
+    <span class="active"></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
