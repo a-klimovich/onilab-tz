@@ -6,8 +6,8 @@
   z-index: -1;
 
   &.open {
-    height: auto;
-    overflow: auto;
+    height: auto !important;
+    transition: height 0.3s ease-in-out;
     z-index: 0;
   }
 }

@@ -8,6 +8,8 @@
   border-radius: 4px;
   background-color: rgba(242, 206, 223, 0.6);
   margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
 
   &__text {
     color: $primary;
@@ -15,11 +17,17 @@
     
     .title {
       font-weight: 700;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
     }
     .text {
+      max-width: 415px;
       font-size: 12px;
     }
+  }
+
+  &__image-bg {
+    position: absolute;
+    right: -70px;
   }
 
   &__btn {
@@ -30,28 +38,16 @@
     height: 31px;
     border-radius: 4px;
     background-color: $white;
-    border: none;
-    color: $primary;
     cursor: pointer;
-    position: relative;
+    z-index: 2;
 
-    &::before, &::after {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 8px;
-      height: 2px;
-      background-color: $primary;
-      border-radius: 10px;
-    }
+    svg {
+      transform: rotate(-90deg);
 
-    &::before {
-      top: 56%;
-      transform: rotate(-45deg);
-    }
-    &::after {
-      bottom: 54%;
-      transform: rotate(45deg);
+      path {
+        fill: $primary;
+        fill-opacity: 1;
+      }
     }
   }
 }

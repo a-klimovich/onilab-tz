@@ -2,31 +2,41 @@
   <div class="product-item-palette__info">
     <p>Color: <span id="itemColourName" class="colour-name">340 Miss Kiss</span></p>
 
-    <button type="button">View all colors</button>
+    <button id="showAllColours" type="button">View all colors</button>
   </div>
 
-  <div class="product-item-palette__colour-bar">
+  <div id="palletAllColoursItem" class="product-item-palette__colour-bar">
     @@loop('./product-item/good-color.html', [
       {'colour': '#883039', 'name': 'colorName'},
-      {'colour': '#7C3946','name': 'colorName'},
+      {'colour': '#7C3946','name': 'colorName','absent': 'absent'},
       {'colour': '#C05652','name': 'colorName','absent': 'absent'},
       {'colour': '#982630','name': 'colorName'},
       {'colour': '#601830','name': 'colorName'},
-      {'colour': '#993167','name': 'colorName'},
+      {'colour': '#993167','name': 'colorName' ,'absent': 'absent'},
       {'colour': '#5D1C38','name': 'colorName'},
       {'colour': '#982630','name': 'colorName'},
       {'colour': '#883039', 'name': 'colorName'},
       {'colour': '#7C3946','name': 'colorName'},
       {'colour': '#C05652','name': 'colorName','absent': 'absent'},
-      {'colour': '#C05652','name': 'colorName','absent': 'absent'},
-      {'colour': '#C05652','name': 'colorName','absent': 'absent'},
-      {'colour': '#C05652','name': 'colorName','absent': 'absent'},
-      {'colour': '#982630','name': 'colorName'},
-      {'colour': '#883039', 'name': 'colorName'},
-      {'colour': '#7C3946','name': 'colorName'},
+      {'colour': '#C05652','name': 'colorName'},
       {'colour': '#C05652','name': 'colorName','absent': 'absent'},
       {'colour': '#982630','name': 'colorName'},
       {'colour': '#601830','name': 'colorName'},
+      {'colour': '#993167','name': 'colorName'},
+      {'colour': '#5D1C38','name': 'colorName','absent': 'absent'},
+      {'colour': '#982630','name': 'colorName'},
+      {'colour': '#883039', 'name': 'colorName'},
+      {'colour': '#7C3946','name': 'colorName'},
+      {'colour': '#C05652','name': 'colorName'},
+      {'colour': '#C05652','name': 'colorName','absent': 'absent'},
+      {'colour': '#C05652','name': 'colorName','absent': 'absent'},
+      {'colour': '#C05652','name': 'colorName'},
+      {'colour': '#982630','name': 'colorName'},
+      {'colour': '#883039', 'name': 'colorName'},
+      {'colour': '#7C3946','name': 'colorName','absent': 'absent'},
+      {'colour': '#C05652','name': 'colorName','absent': 'absent'},
+      {'colour': '#982630','name': 'colorName'},
+      {'colour': '#601830','name': 'colorName','absent': 'absent'},
       {'colour': '#993167','name': 'colorName'},
       {'colour': '#5D1C38','name': 'colorName'},
       {'colour': '#982630','name': 'colorName'},

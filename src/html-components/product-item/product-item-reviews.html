@@ -1,0 +1,50 @@
+<div class="product-item-reviews border-bottom mb-20 pb-20">
+  <div class="product-item-reviews__title">Reviews</div>
+
+  <div id='collapsReviews' class="collapse mb-20">
+    <div class="product-item-reviews__add-review mb-20">
+      <div class="user-rating-item">
+        <div class="rate-stars-bar">
+          @@include('../assets/icon/star.svg', {
+            'class': 'fill-primary',
+          })
+          @@include('../assets/icon/star.svg', {
+            'class': 'fill-primary',
+          })
+          @@include('../assets/icon/star.svg', {
+            'class': 'fill-primary',
+          })
+          @@include('../assets/icon/star.svg', {
+            'class': 'fill-primary',
+          })
+          @@include('../assets/icon/star.svg', {
+            'class': 'fill-light-gray',
+          })
+        </div>
+  
+        <p>30 Reviews</p>
+      </div>
+  
+      <button class="add-review__btn">Write a review</button>
+    </div>
+  
+    @@include('./product-item/user-comment.html', {
+      'userTitleComment':'Perfect!!',
+      'color':'#C05652',
+      'colorName':'340 Miss Kiss ',
+      'userComment':'Everything was cool. Product quality top, delivery fast. Thanks Bliss ^^',
+      'userName':'Mary Collins',
+      'postDate':'2 days ago',
+    })
+    @@include('./product-item/user-comment.html', {
+      'userTitleComment':'Love It!',
+      'color':'#601830',
+      'colorName':'328 Red Hot',
+      'userComment':'I love this, it like a lip stick and balm in one, goes on nicely with lovely sheer buildable color.',
+      'userName':'Mavis Dracula',
+      'postDate':'5 days ago',
+    })
+  </div>
+
+  <button id='showMoreReviews' class="product-item-reviews__btn">View all reviews</button>
+</div>

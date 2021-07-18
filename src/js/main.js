@@ -12,6 +12,44 @@
     }
   });
 
+  // COLLAPS
+  $('#showMoreOverview').click(() => {
+    $('#collapseOverview').toggleClass('open')
+  })
+  
+  $('#showMoreIngredients').click(() => {
+    $('#collapseIngredients').toggleClass('open')
+  })
+  
+  $('#showMoreAboutBrand').click(() => {
+    $('#collapseAboutBrand').toggleClass('open')
+  })
+
+  $('#showMoreDelivery').click(() => {
+    $('#collapsDelivery').toggleClass('open')
+  })
+
+  $('#showMoreReviews').click(() => {
+    $('#collapsReviews').toggleClass('open')
+  })
+
+  $('#showAllColours').click(() => {
+    $('#palletAllColoursItem').toggleClass('show')
+    $('#showAllColours').dellet()
+  })
+
+  if ( $(window).width() < 768 ){
+    $('#footerMenuCollapseServices').click(() => {
+      $('#footerNavServicesContent').slideToggle("fast")
+    })
+  
+    $('#footerMenuCollapseAboutUs').click(() => {
+      $('#footerNavAboutUsContent').slideToggle("fast")
+    })
+  }else{
+    console.log('Nice!')
+  }
+
     
   $('#productItemSlider').slick({
     arrows: false,

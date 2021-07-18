@@ -1,7 +1,7 @@
 <div class="product-item-ingredients border-bottom mb-20">
-  <div class="product-item-ingredients__title">Ingredients <span>@@include('../assets/icon/chevron.svg')</span></div>
+  <button data-toggle="collapse" aria-controls="collapseExample" class="product-item-ingredients__title">Ingredients <span>@@include('../assets/icon/chevron.svg')</span></button>
 
-  <div class="collapse">
+  <div class="collapse" id="collapseIngredients">
     <div class="product-item-ingredients__content">
       <p class="product-item-ingredients__content_subtitle">What is it</p>
       <p class="product-item-ingredients__content_text">
@@ -18,5 +18,5 @@
     </div>
   </div>
 
-  <button class="product-item-ingredients__btn-show-more ">View all ingredients</button>
+  <button id="showMoreIngredients" class="product-item-ingredients__btn-show-more ">View all ingredients</button>
 </div>
