@@ -39,7 +39,7 @@
         border: 1px solid transparent;
       }
 
-      &__image.active {
+      .slick-current {
         border: 1px solid $primary;
       }
 

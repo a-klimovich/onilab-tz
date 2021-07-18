@@ -14,7 +14,6 @@
     position: relative;
     display: flex;
     justify-content: center;
-    overflow-x: auto;
   }
 
   &__arrow {
@@ -42,7 +41,7 @@
     }
   }
 
-  .dots {
+  .slick-dots {
     position: absolute;
     bottom: 0;
     left: 15px;
@@ -52,16 +51,20 @@
     display: flex;
     border-radius: 4px;
 
-    span {
+    li {
       display: block;
       height: 4px;
-      width: calc(100% / 3);
+      width: 100%;
       cursor: pointer;
-    }
+      
+      &.slick-active {
+        border-radius: 4px;
+        background-color: $base-gray-50;
+      }
 
-    span.active {
-      background-color: $base-gray-20;
-      border-radius: 4px;
+      button {
+        display: none;
+      }
     }
   }
 
