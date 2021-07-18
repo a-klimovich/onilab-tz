@@ -38,6 +38,14 @@
     $('#showAllColours').dellet()
   })
 
+  $('.product-item-ingredients__title').click(() => {
+    $('#collapseIngredients').toggleClass('open')
+  })
+
+  $('.product-item-about-brand__title').click(() => {
+    $('#collapseAboutBrand').toggleClass('open')
+  })
+
   if ( $(window).width() < 768 ){
     $('#footerMenuCollapseServices').click(() => {
       $('#footerNavServicesContent').slideToggle("fast")
