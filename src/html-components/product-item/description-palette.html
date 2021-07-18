@@ -1,11 +1,11 @@
-<form class="product-item-palette border-bottom mb-20 pb-20">
-  <div class="product-item-palette__info">
+<form class="description-palette border-bottom mb-20 pb-20">
+  <div class="description-palette__info">
     <p>Color: <span id="itemColourName" class="colour-name">340 Miss Kiss</span></p>
 
     <button id="showAllColours" type="button">View all colors</button>
   </div>
 
-  <div id="palletAllColoursItem" class="product-item-palette__colour-bar">
+  <div id="palletAllColoursItem" class="description-palette__colour-bar">
     @@loop('./product-item/good-color.html', [
       {'colour': '#883039', 'name': 'colorName'},
       {'colour': '#7C3946','name': 'colorName','absent': 'absent'},
@@ -43,7 +43,7 @@
     ])
   </div>
 
-  <div class="product-item-palette__add-to-basket-controllers">
+  <div class="description-palette__add-to-basket-controllers">
     <div class="select-wrapper">
       <select name="select-product-quentity" class="select-quantity">
         <option value="1">1</option>
@@ -58,7 +58,7 @@
     <button type="button" class="follow-product">@@include('../assets/icon/heart.svg')</button>
   </div>
 
-  <div class="product-item-palette__about-points">
+  <div class="description-palette__about-points">
     <div class="image"><img src="./assets/logo.svg" alt=""></div>
     <div class="title">Earn <span id="pointsBlissBit" class="bliss-points">76</span> Bliss Bits points:</div>
     <div class="subtitle">What’s this?</div>

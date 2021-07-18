@@ -1,35 +1,11 @@
 @import '../variables';
 
-.product-item-about-brand {
-  &.collapse-mobile {
-    box-shadow: none;
-
-    button  {
-      width: 100%;
-    }
-
-    .collapse {
-      height: 0;
-    }
-
-    .product-item-about-brand__btn-show-more {
-      display: none;
-    }
-
-    .product-item-about-brand__content {
-      margin-bottom: 20px;
-    }
+.description-brand {
+  .collapse {
+    height: 0;
 
     @media (min-width: 768px) {
-      box-shadow: inset 0 -150px 100px -50px $white;
-
-      .collapse {
-        height: auto;
-      }
-  
-      .product-item-about-brand__btn-show-more {
-        display: block;
-      }
+      height: 230px;
     }
   }
 

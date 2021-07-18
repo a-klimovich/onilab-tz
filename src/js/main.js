@@ -1,8 +1,8 @@
 (function() {
   //Header scroll
-  const $header = $(".header");
-  const scroll = 0;
-  const active = "active";
+  var $header = $(".header");
+  var scroll = 0;
+  var active = "active";
   
   $(window).scroll(function() {
     if ($(window).scrollTop() > scroll) {
@@ -12,53 +12,63 @@
     }
   });
 
+  // Hamburger menu
+  $('.hamburger').click(() => {
+    $('.hamburger').toggleClass('active')
+  })
+
+  // TODO 
+  // $('[data-target="collapse"]').click((e) => {
+  //   console.log($('[data-target="collapse"]').attr());
+  // })
+
   // COLLAPS
-  $('#showMoreOverview').click(() => {
+  $('#showMoreOverview').click(function() {
     $('#collapseOverview').toggleClass('open')
   })
   
-  $('#showMoreIngredients').click(() => {
+  $('#showMoreIngredients').click(function() {
     $('#collapseIngredients').toggleClass('open')
   })
   
-  $('#showMoreAboutBrand').click(() => {
+  $('#showMoreAboutBrand').click(function() {
     $('#collapseAboutBrand').toggleClass('open')
   })
 
-  $('#showMoreDelivery').click(() => {
+  $('#showMoreDelivery').click(function() {
     $('#collapsDelivery').toggleClass('open')
   })
 
-  $('#showMoreReviews').click(() => {
+  $('#showMoreReviews').click(function() {
     $('#collapsReviews').toggleClass('open')
   })
 
-  $('#showAllColours').click(() => {
+  $('#showAllColours').click(function() {
     $('#palletAllColoursItem').toggleClass('show')
     $('#showAllColours').dellet()
   })
 
-  $('.product-item-ingredients__title').click(() => {
+  $('#showMoreMobileIngredients').click(function() {
     $('#collapseIngredients').toggleClass('open')
   })
 
-  $('.product-item-about-brand__title').click(() => {
+  $('#showMoreMobileBrand').click(function() {
     $('#collapseAboutBrand').toggleClass('open')
   })
 
   if ( $(window).width() < 768 ){
-    $('#footerMenuCollapseServices').click(() => {
+    $('#footerMenuCollapseServices').click(function() {
       $('#footerNavServicesContent').slideToggle("fast")
     })
   
-    $('#footerMenuCollapseAboutUs').click(() => {
+    $('#footerMenuCollapseAboutUs').click(function() {
       $('#footerNavAboutUsContent').slideToggle("fast")
     })
   }else{
     console.log('Nice!')
   }
 
-    
+// SLICK-SLIDER
   $('#productItemSlider').slick({
     arrows: false,
     asNavFor: '#productItemSliderDots',
@@ -79,7 +89,7 @@
     infinite: false,
     speed: 300,
     slidesToShow: 2,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     prevArrow: '.prev',
     nextArrow: '.next',
     dots: true,
@@ -89,14 +99,14 @@
         breakpoint: 768,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToScroll: 3,
         }
       },
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 1,
+          slidesToScroll: 4,
           arrows: false,
       }
     }]

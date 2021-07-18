@@ -1,0 +1,26 @@
+@import '../variables';
+
+.description-ingredients {
+  .collapse {
+    height: 0;
+
+    @media (min-width: 768px) {
+      height: 140px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      svg {
+        transform: rotate(-90deg);
+      }
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}

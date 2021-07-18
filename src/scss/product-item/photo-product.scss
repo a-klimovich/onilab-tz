@@ -8,22 +8,22 @@
     width: 100%;
     padding-left: 0;
 
-    .prompt-to-contol-slider {
-      display: none;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      color: $base-gray-50;
-      font-size: 10px;
-
-      @media (min-width: 768px) {
-        display: block;
-      }
-    }
-
     @media (min-width: 768px) {
       padding-left: 100px;
+    }
+  }
+
+  .prompt-to-contol-slider {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $base-gray-50;
+    font-size: 10px;
+
+    @media (min-width: 768px) {
+      display: block;
     }
   }
 

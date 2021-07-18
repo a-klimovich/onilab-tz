@@ -33,6 +33,11 @@
 
   input {
     display: none;
+
+    &:checked ~ div {
+      padding: 5px;
+      border: 1px solid $base-gray-50;
+    }
   }
 
   &.absent {
@@ -48,10 +53,6 @@
       border-top: 1px solid $base-gray-50;
     }
 
-    &:hover:after {
-      top: 45%;
-    }
-
     &::after {
       content: '';
       position: absolute;
@@ -60,11 +61,7 @@
       background-color: $light-gray;
       transform: rotate(-45deg);
       top: 50%;
+      left: 0;
     }
   }
-}
-
-.good-color input:checked ~ div {
-  padding: 5px;
-  border: 1px solid $base-gray-50;
 }

@@ -8,6 +8,7 @@ const imagemin = require('gulp-imagemin');
 const connect = require('gulp-connect');
 const fileinclude = require('gulp-file-include');
 const gulp = require('gulp');
+const minify = require('gulp-minify');
 
 const srcDirectory = 'src/';
 const buildDirectory = 'build/';
@@ -51,6 +52,7 @@ function styles() {
 function scripts() {
   return src(files.js)
     .pipe( concat('scripts.js') )
+    .pipe(minify())
     .pipe( dest(buildDirectory + 'js/') )
 }
 
@@ -71,10 +73,6 @@ function fonts() {
     .pipe( dest(buildDirectory + 'fonts/') )
 }
 
-function htaccess() {
-  return src(srcDirectory + '.htaccess')
-    .pipe( dest(buildDirectory + '/') )
-}
 /** -//- */
 
 function watchTask(){
@@ -92,7 +90,7 @@ function connectTask() {
   })
 }
 
-const build = parallel(html, styles, scripts, images, assets, fonts, htaccess)
+const build = parallel(html, styles, scripts, images, assets, fonts)
 
 exports.build = build;
 
