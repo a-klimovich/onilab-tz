@@ -1,5 +1,5 @@
 # onilab-tz 
-* ...in process
+
 #### Workflow:
 > Gulp 
 #### Node:
